@@ -107,21 +107,25 @@ int main() {
     printf("Atributo escolhido: %s\n", atributo_escolhido);
 
     // Lógica de comparação
-    if (populacao1 == populacao2) { // Empate no caso de mesmo valor (obs: usado essa maneira de estrutura, para no nivel simples não usar if else, apenas if ou else e ter a opção do empate)
+    // Empate no caso de mesmo valor
+    if (populacao1 == populacao2) { 
         printf("Carta 1: %s (%s): %lu \n", cidade1, estado1, populacao1);
         printf("Carta 2: %s (%s): %u \n", cidade2, estado2, populacao2);
         printf("Resultado: Empate!\n");
-    } else {
-        if (populacao1 > populacao2) {
-            printf("Carta 1: %s (%s): %lu \n", cidade1, estado1, populacao1);
-            printf("Carta 2: %s (%s): %lu \n", cidade2, estado2, populacao2);
-            printf("Resultado: Carta 1 - %s (%s) venceu!\n", cidade1, estado1);
-        } else {
-            printf("Carta 1: %s (%s): %lu \n", cidade1, estado1, populacao1);
-            printf("Carta 2: %s (%s): %lu \n", cidade2, estado2, populacao2);
-            printf("Resultado: Carta 2 - %s (%s) venceu!\n", cidade2, estado2);
-        } 
     }
-
+    // Atributo carta 1 maior que atributo carta 2
+    if (populacao1 > populacao2) {
+        printf("Carta 1: %s (%s): %lu \n", cidade1, estado1, populacao1);
+        printf("Carta 2: %s (%s): %lu \n", cidade2, estado2, populacao2);
+        printf("Resultado: Carta 1 - %s (%s) venceu!\n", cidade1, estado1);
+    } 
+    // Atributo carta 1 menor que atributo carta 2
+    if (populacao1 < populacao2) {
+        printf("Carta 1: %s (%s): %lu \n", cidade1, estado1, populacao1);
+        printf("Carta 2: %s (%s): %lu \n", cidade2, estado2, populacao2);
+        printf("Resultado: Carta 2 - %s (%s) venceu!\n", cidade2, estado2);
+    }
+     
+    
     return 0;
 }
