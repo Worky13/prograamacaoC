@@ -5,8 +5,15 @@ int main() {
     int tamanhoTabuleiro = 10;
     int tamanhoNavio = 3;
 
-    // Declaração do tabuleiro (inicializado com 0, que representa água)
-    int tabuleiro[tamanhoTabuleiro][tamanhoTabuleiro] = {0};
+    // Declaração do tabuleiro
+    int tabuleiro[tamanhoTabuleiro][tamanhoTabuleiro];
+
+    // Inicialização do tabuleiro com 0 (água)
+    for (int i = 0; i < tamanhoTabuleiro; i++) {
+        for (int j = 0; j < tamanhoTabuleiro; j++) {
+            tabuleiro[i][j] = 0;
+        }
+    }
 
     // Coordenadas iniciais dos navios
     int linhaNavio1 = 2, colunaNavio1 = 2; // Navio 1 (horizontal)
