@@ -100,7 +100,11 @@ int main() {
             tabuleiro[linhaNavio4 + i][colunaNavio4 - i] = 3;
         }
 
-        // Exibe o tabuleiro com "0s" e "3s"
+        /*
+        Exibe o tabuleiro com "0s" e "3s"
+        Observação: acredito que possa ser um erro de digitação na atividade, já que essa instrução não foi passada no nivel Mestre, mas visando 
+        garantir entregar o que foi pedido, segue abaixa uma estrutura de If Else para atender o pedido de exibição de agua com "0s" e os navios com "3s".
+        */ 
         printf("Tabuleiro:\n");
         for (int i = 0; i < tamanhoTabuleiro; i++) {
             for (int j = 0; j < tamanhoTabuleiro; j++) {
